@@ -65,11 +65,54 @@ body {
     column-gap:           0px;
 }
 
-#photos img {
+#execPhotos img {
     /* Just in case there are inline attributes */
     width: 50% !important;
     height: 50% !important;
+    margin-left: 25%;
+    border-radius: 50%;
+    padding: 5px;
 }
+
+th{
+    border-bottom: #fdb813 solid 2px;
+    text-align: center;
+    font-size: large;
+}
+
+#place{
+    border: none;
+}
+
+td{
+    text-align: center;
+    border-right: solid grey 1px;
+}
+
+
+/**  CONTACT  */
+.contact-form {
+    margin-top: 40px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    outline: 0;
+    border: 1px solid #aaaaaa;
+    padding: 12px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: 0;
+}
+.contact-form .button {
+    width: auto;
+    background: #fdb813;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+}
+
 
 footer {
     margin: 50px 0;

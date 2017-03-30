@@ -17,12 +17,21 @@
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
 
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- tweak for where anchor lands for navigation -->
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
 
 </head>
 
@@ -84,7 +93,7 @@
             <h2 class="featurette-heading">About
                 <span class="text-muted">.devClub</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">devClub's mandate is to provide students of the University of Manitoba with an opportunity to gain some coding experience, learn various engines, softwares, and consoles. This group will also be opened to students who are just interested and would like to join.</p>
         </div>
 
         <hr class="featurette-divider">
@@ -95,8 +104,31 @@
             <h2 class="featurette-heading">Our Next
                 <span class="text-muted">Meetings</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+            <p class="lead">Our meetings are usually every Thursday at 5:30pm.</p>
+            <table style="width: 50%">
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Place</th>
+                </tr>
+                <tr>
+                    <td>March 30</td>
+                    <td>5:30pm</td>
+                    <td id="place">E2-164</td>
+                </tr>
+                <tr>
+                    <td>April 6</td>
+                    <td>5:30pm</td>
+                    <td id="place">E2-164</td>
+                </tr>
+                <tr>
+                    <td>April 13</td>
+                    <td>5:30pm</td>
+                    <td id="place">E2-164</td>
+                </tr>
+            </table>
+
+
 
         <hr class="featurette-divider">
 
@@ -110,10 +142,10 @@
 
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             <section id="execPhotos">
-                <img src="images/logo.png" alt="Kenny">
-                <img src="images/logo.png" alt="Alex">
-                <img src="images/logo.png" alt="Mardel">
-                <img src="images/logo.png" alt="Ryan">
+                <img src="images/kenny.jpg" alt="Kenny">
+                <img src="images/alex.jpg" alt="Alex">
+                <img src="images/mardel.jpg" alt="Mardel">
+                <img src="images/julius.jpg" alt="Julius">
 
             </section>
         </div>
@@ -126,7 +158,26 @@
             <h2 class="featurette-heading">Contact
                 <span class="text-muted">Us</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <div class="row">
+                <form action="mail.php" method="post" class="contact-form">
+                    <fieldset class="col-md-4 col-sm-6">
+                        <input type="text" id="your-name" placeholder="Your Name...">
+                    </fieldset>
+                    <fieldset class="col-md-4 col-sm-6">
+                        <input type="email" id="email" placeholder="Your Email...">
+                    </fieldset>
+                    <fieldset class="col-md-4 col-sm-12">
+                        <input type="text" id="your-subject" placeholder="Subject...">
+                    </fieldset>
+                    <fieldset class="col-md-12 col-sm-12">
+                        <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
+                    </fieldset>
+                    <fieldset class="col-md-12 col-sm-12">
+                        <input type="submit" class="button big default" value="Send Message">
+                    </fieldset>
+                </form>
+            </div> <!-- .contact-form -->
+
         </div>
 
         <hr class="featurette-divider">
@@ -135,7 +186,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; devClub 2017</p>
                 </div>
             </div>
         </footer>
