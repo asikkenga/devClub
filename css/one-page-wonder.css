@@ -33,6 +33,7 @@ body {
     background: rgba(255,255,255,.5);
 }
 
+
 .featurette-divider {
     margin: 80px 0;
 }
@@ -55,7 +56,7 @@ body {
 
 #execPhotos{
     /* Prevent vertical gaps */
-    line-height: 0;
+    line-height: 20px;
 
     -webkit-column-count: 2;
     -webkit-column-gap:   0px;
@@ -67,12 +68,45 @@ body {
 
 #execPhotos img {
     /* Just in case there are inline attributes */
-    width: 50% !important;
-    height: 50% !important;
-    margin-left: 25%;
+    width: 35% !important;
+    height: 35% !important;
+    margin-left: 20%;
     border-radius: 50%;
     padding: 5px;
 }
+
+#execBottom{
+    /* Prevent vertical gaps */
+    line-height: 20px;
+
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:        3;
+    column-gap:           0px;
+}
+
+#execBottom img {
+    /* Just in case there are inline attributes */
+    width: 40% !important;
+    height: 40% !important;
+    margin-left: 15%;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+.execHeading{
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+#execs p{
+    font-size: 10pt;
+}
+
 
 th{
     border-bottom: #fdb813 solid 2px;
