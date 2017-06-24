@@ -87,8 +87,6 @@
 <!-- Page Content -->
 <div class="container">
 
-    <hr class="featurette-divider">
-
     <!-- First Featurette -->
     <div class="featurette" id="about">
         <img class="featurette-image img-circle img-responsive pull-right" src="images/logo.png">
@@ -236,16 +234,16 @@
             <div class="row">
                 <form action="mail.php" method="post" class="contact-form">
                     <fieldset class="col-md-4 col-sm-6">
-                        <input class="form-control" type="text" id="your-name" placeholder="Your Name..." title="Enter Your Name">
+                        <input class="form-control" type="text" id="your-name" placeholder="Your Name..." maxlength="60" title="Enter Your Name">
                     </fieldset>
                     <fieldset class="col-md-4 col-sm-6">
-                        <input  class="form-control" type="email" id="email" placeholder="Your Email..." title="Enter Your Email">
+                        <input  class="form-control" type="email" id="your-email" placeholder="Your Email..." maxlength="60" title="Enter Your Email">
                     </fieldset>
                     <fieldset class="col-md-4 col-sm-12">
-                        <input class="form-control" type="text" id="your-subject" placeholder="Subject..." title="Enter Subject">
+                        <input class="form-control" type="text" id="your-subject" placeholder="Subject..." maxlength="100" title="Enter Subject">
                     </fieldset>
                     <fieldset class="col-md-12 col-sm-12">
-                        <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="Leave your message..." title="Enter Message"></textarea>
+                        <textarea class="form-control" name="message" id="your-message" cols="30" rows="6" placeholder="Leave your message..." maxlength="500" title="Enter Message"></textarea>
                     </fieldset>
                     <fieldset class="col-md-12 col-sm-12">
                         <button type="submit" class="button big default buttonPadding" value="Send Message">Send Message</button>

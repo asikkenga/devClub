@@ -11,15 +11,18 @@ body {
 
 .header-image {
     text-align: center;
-    background: url('../images/groupPhoto.jpg')center no-repeat;
+    background: url('../images/groupPhoto.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+
 }
 
 .headline {
-    padding: 200px 0;
+    padding: 270px 0;
     border-bottom: #fdb813 solid 5px;
 }
 
@@ -85,7 +88,7 @@ body {
 /** EXECS */
 
 #execs{
-    padding: 60px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -118,7 +121,7 @@ body {
     display: block;
     position: relative;
     top: 0;
-    font-size: 20px;
+    font-size: 18px;
     background: none;
     padding: 2px;
 }
@@ -128,7 +131,7 @@ body {
 
 #execs img{
     width: 100%;
-    max-width: 240px;
+    max-width: 200px;
     border-radius: 50%;
     border: 15px solid transparent;
     box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
@@ -345,6 +348,7 @@ footer {
 
 .footer{
     width: 100%;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -355,3 +359,9 @@ footer {
 .buttonPadding{
     padding: 6px 6px 6px 6px;
 }
+
+.navbar{
+    margin-bottom: 30px;
+}
+
+#about{padding-top: 20px;}
