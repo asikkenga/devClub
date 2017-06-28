@@ -17,7 +17,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 100%;
 
 }
 
@@ -28,8 +27,8 @@ body {
 
 .headline h1 {
     display: inline;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: .5em;
+    padding-right: .5em;
     font-size: 130px;
     background: #fff;
     background: rgba(255,255,255,.5);
@@ -167,19 +166,6 @@ body {
     padding-bottom: 40px;
 }
 
-/* Mobile Devices Optimization */
-@media (min-width: 568px) and (max-width: 992px) {
-
-    .row1 .col-md-6, .row2 .col-md-3 {
-        display: inline-block;
-        max-width: 50%;
-    }
-
-    #execs img {max-width: 300px;}
-
-}
-
-
 th{
     border-bottom: #fdb813 solid 2px;
     text-align: center;
@@ -224,7 +210,22 @@ footer {
     margin: 50px 0;
 }
 
+/* Mobile Devices Optimization */
+@media (min-width: 568px) and (max-width: 992px) {
+
+    .row1 .col-md-6, .row2 .col-md-3 {
+        display: inline-block;
+        max-width: 50%;
+    }
+
+    #execs img {max-width: 300px;}
+}
+
 @media(max-width:1200px) {
+    .header-image{
+        width: 100%;
+    }
+
     .headline h1 {
         font-size: 140px;
     }
@@ -251,6 +252,10 @@ footer {
 }
 
 @media(max-width:991px) {
+    .header-image{
+        width: 100%;
+    }
+
     .headline h1 {
         font-size: 105px;
     }
@@ -281,6 +286,10 @@ footer {
 }
 
 @media(max-width:768px) {
+    .header-image{
+        width: 100%;
+    }
+
     .container {
         margin: 0 15px;
     }
@@ -295,6 +304,10 @@ footer {
 }
 
 @media(max-width:668px) {
+    .header-image{
+        width: 100%;
+    }
+
     .headline h1 {
         font-size: 70px;
     }
@@ -309,6 +322,10 @@ footer {
 }
 
 @media(max-width:640px) {
+    .header-image{
+        width: 100%;
+    }
+
     .headline {
         padding: 75px 0 25px 0;
     }
@@ -323,6 +340,39 @@ footer {
 }
 
 @media(max-width:375px) {
+    .header-image{
+        width: 100%;
+    }
+
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:320px) {
+    .header-image{
+        width: 100%;
+    }
+
+    .headline h1{
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+
     .featurette-divider {
         margin: 10px 0;
     }
@@ -363,5 +413,7 @@ footer {
 .navbar{
     margin-bottom: 30px;
 }
+
+
 
 #about{padding-top: 20px;}
