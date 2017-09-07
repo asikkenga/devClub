@@ -6,8 +6,10 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-
+    overflow-x: hidden;
 }
+
+
 
 .header-image {
     text-align: center;
@@ -26,6 +28,7 @@ body {
 }
 
 .headline h1 {
+    font-family: 'norwester';
     display: inline;
     padding-left: .5em;
     padding-right: .5em;
@@ -100,47 +103,34 @@ body {
 }
 
 #execs h3{
-    padding: 0 0 15px;
     font-family: 'norwester';
-    font-size: 36px;
+    font-size: 16px;
     text-transform: uppercase;
+    margin-top: -10px;
+    text-align: center;
 }
 
 #execs h4 {
-    margin-top: -20px;
-    margin-left: 10px;
-    font-size: 32px;
-    font-weight: 700;
+    font-family: 'norwester';
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 550;
     color: black;
     text-align: center;
 
 }
 
-#execs h4 span{
-    display: block;
-    position: relative;
-    top: 0;
-    font-size: 18px;
-    background: none;
-    padding: 2px;
-}
-
-
-
-
 #execs img{
     width: 100%;
     max-width: 200px;
-    border-radius: 50%;
-    border: 15px solid transparent;
-    box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.1s ease-in;
 }
 
 #execs img:hover{
-    border: 15px solid rgba(0, 77, 153, .5) ;
+    border: 15px solid rgb(253, 184, 19);
     position: relative;
-    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-out;
 }
 
 #execs span.title{
@@ -364,6 +354,7 @@ footer {
 }
 
 @media(max-width:320px) {
+
     .header-image{
         width: 100%;
     }
@@ -414,6 +405,92 @@ footer {
     margin-bottom: 30px;
 }
 
-
-
 #about{padding-top: 20px;}
+
+/*-----------------------------------------------------------------------------------*/
+/* Social Icons */
+/*-----------------------------------------------------------------------------------*/
+ul.social-icons {
+    list-style: none;
+    margin: 17px 10px 0 0;
+    position: fixed;
+    width: 40px;
+    right: 36px;
+    bottom: 40px;
+}
+ul.social-icons.circle li {
+    background-image: none;
+    background-color: transparent;
+}
+ul.social-icons.circle li a {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-position: 0px -40px !important;
+    border-radius: 50% !important;
+}
+ul.social-icons.rounded a {
+    border-radius: 5px !important;
+}
+ul.social-icons.color .social-facebook a {
+    background-color: #3b5998;
+}
+ul.social-email.color .social-email a{
+    background-color: #cb2027;
+}
+ul.social-icons.color .social-github a {
+    background-color: #333333;
+}
+ul.social-icons.color .social-slack a{
+    background-color: yellow;
+}
+ul.social-icons.color .social-slack a{
+    background-color: purple;
+}
+ul.social-icons.border li a {
+    background-position: 0px 0px !important;
+    border: 2px solid #8faca6;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+ul.social-icons.border li a:hover {
+
+}
+ul.social-icons li {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    /* gradient overlay */
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    /* gradient overlay */
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 0 0 0px 0;
+}
+ul.social-icons li a {
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    padding-bottom: 1px;
+    opacity: 1;
+}
+.social-facebook a {
+    background: url(../images/social_icons/facebook.png);
+}
+.social-email a {
+    background: url(../images/social_icons/gmail.png);
+}
+.social-github a {
+    background: url(../images/social_icons/git.png);
+}
+.social-slack a {
+    background: url(../images/social_icons/slack.png);
+}
+.social-instagram a {
+    background: url(../images/social_icons/instagram.png);
+}
